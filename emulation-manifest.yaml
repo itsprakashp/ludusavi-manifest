@@ -147,7 +147,7 @@ RPCS3:
         - os: windows
 Ryujinx:
   files:
-    "<base>/portable":
+    "<base>/portable/bis/user/save":
       tags:
         - config
         - save
