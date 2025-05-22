@@ -1,0 +1,155 @@
+---
+Azahar:
+  files:
+    "<base>/user/config":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/user/sdmc/Nintendo 3DS/00000000000000000000000000000000/00000000000000000000000000000000/title/00040000":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<base>/user/sdmc/Nintendo 3DS/00000000000000000000000000000000/00000000000000000000000000000000/extdata":
+      tags:
+        - save
+      when:
+        - os: windows
+Cemu:
+  files:
+    "<base>/portable/settings.xml":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/portable/mlc01/usr/save":
+      tags:
+        - save
+      when:
+        - os: windows
+Dolphin:
+  files:
+    "<base>/User/Config":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/User/GC":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<base>/User/Wii":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<base>/User/StateSaves":
+      tags:
+        - save
+      when:
+        - os: windows
+melonDS:
+  files:
+    "<base>/melonDS.toml":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/Saves":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<base>/Savestates":
+      tags:
+        - save
+      when:
+        - os: windows
+PCSX2:
+  files:
+    "<base>/gamesettings":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/inis":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/inputprofiles":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/memcards":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<base>/sstates":
+      tags:
+        - save
+      when:
+        - os: windows
+PPSSPP:
+  files:
+    "<base>/memstick/PSP/SYSTEM":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/memstick/PSP/SAVEDATA":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<base>/memstick/PSP/PPSSPP_STATE":
+      tags:
+        - save
+      when:
+        - os: windows
+RetroArch:
+  files:
+    "<base>/retroarch-core-options.cfg":
+      tags:
+        - config
+      when:
+        - os: linux
+    "<base>/retroarch.cfg":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/saves":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<base>/states":
+      tags:
+        - save
+      when:
+        - os: windows
+RPCS3:
+  files:
+    "<base>/config":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<base>/dev_hdd0/home":
+      tags:
+        - save
+      when:
+        - os: windows
+Ryujinx:
+  files:
+    "<base>/portable":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows

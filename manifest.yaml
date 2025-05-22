@@ -1,0 +1,315 @@
+---
+Bayonetta:
+  files:
+    "<winDocuments>/Bayonetta":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<root>/userdata/<storeUserId>/460790":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<winPublic>/Documents/Steam/CODEX/460790/remote":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    Bayonetta: {}
+  launch:
+    "<base>/Bayonetta.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 460790
+Dark Souls Remastered:
+  files:
+    "<winDocuments>/NBGI/DARK SOULS REMASTERED":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<winLocalAppData>/FromSoftware/NBGI/DarkSouls":
+      tags:
+        - config
+      when:
+        - os: windows
+  installDir:
+    Dark Souls Remastered: {}
+  launch:
+    "<base>/DarkSoulsRemastered.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 570940
+"Expeditions: A MudRunner Game":
+  files:
+    "<root>/userdata/<storeUserId>/2477340/remote":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+    "<winPublic>/Documents/Steam/RUNE/2477340/remote":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    Expeditions A MudRunner Game: {}
+  launch:
+    "<base>/Sources/Bin/Expeditions.exe":
+      - when:
+          - os: windows
+        workingDir: "<base>/Sources/Bin"
+  steam:
+    id: 2477340
+Factorio:
+  files:
+    "<base>/game/blueprint-storage.dat":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<winAppData>/Factorio/config":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<winAppData>/Factorio/saves":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    Factorio: {}
+  launch:
+    "<base>/bin/Win32/Factorio.exe":
+      - when:
+          - bit: 32
+            os: windows
+    "<base>/bin/x64/Factorio.exe":
+      - when:
+          - bit: 64
+            os: windows
+  steam:
+    id: 427520
+Farming Simulator 25:
+  files:
+    "<winDocuments>/My Games/FarmingSimulator2025/savegame*":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    Farming Simulator 25: {}
+  launch:
+    "<base>/FarmingSimulator2025.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 2300320
+Fields of Mistria:
+  files:
+    "<winLocalAppData>/FieldsOfMistria":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+  installDir:
+    Fields of Mistria: {}
+  launch:
+    "<base>/FieldsOfMistria.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 2142790
+Hades:
+  files:
+    "<winDocuments>/Saved Games/Hades":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+  installDir:
+    Hades: {}
+  launch:
+    "<base>/x64/Hades.exe":
+      - when:
+          - bit: 64
+            os: windows
+        workingDir: "<base>/x64"
+  steam:
+    id: 1145360
+Hades II:
+  files:
+    "<home>/Saved Games/Hades II/GlobalSettingsWin.sjson":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<home>/Saved Games/Hades II/Profile*.sav":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    Hades II: {}
+  launch:
+    "<base>/ship/Hades2.exe":
+      - when:
+          - os: windows
+        workingDir: "<base>/ship"
+  steam:
+    id: 1145350
+Luma Island:
+  files:
+    "<home>/AppData/LocalLow/FeelFreeGames/Luma Island/Config/<storeUserId>/account":
+      when:
+        - os: windows
+    "<home>/AppData/LocalLow/FeelFreeGames/Luma Island/Config/<storeUserId>/settings":
+      when:
+        - os: windows
+    "<home>/AppData/LocalLow/FeelFreeGames/Luma Island/Saves/<storeUserId>/*.sav2":
+      when:
+        - os: windows
+    "<winAppData>/My Games/Luma Island/Config/<storeUserId>/**/account":
+      when:
+        - os: windows
+    "<winAppData>/My Games/Luma Island/Config/<storeUserId>/**/settings":
+      when:
+        - os: windows
+    "<winAppData>/My Games/Luma Island/Saves/<storeUserId>/**/*.sav2":
+      when:
+        - os: windows
+    "<winDocuments>/My Games/Luma Island/Config/<storeUserId>/**/settings":
+      when:
+        - os: windows
+    "<winDocuments>/My Games/Luma Island/Saves/<storeUserId>/**/*.sav2":
+      when:
+        - os: windows
+  installDir:
+    Luma Island: {}
+  launch:
+    "<base>/Luma Island.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 2408820
+Mini Motorways:
+  files:
+    "<root>/userdata/<storeUserId>/1127500/remote":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+  installDir:
+    Mini Motorways: {}
+  launch:
+    "<base>/Mini Motorways.exe":
+      - when:
+          - os: windows
+  registry:
+    HKEY_CURRENT_USER/SOFTWARE/Dinosaur Polo Club/Mini Motorways:
+      tags:
+        - config
+  steam:
+    id: 1127500
+"NieR: Automata":
+  files:
+    "<winDocuments>/My Games/NieR_Automata":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+  installDir:
+    NieRAutomata: {}
+  launch:
+    "<base>/NieRAutomata.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 524220
+Ratopia:
+  files:
+    "<base>/Ratopia_Data/SaveFile":
+      when:
+        - os: windows
+  installDir:
+    Ratopia: {}
+  launch:
+    "<base>/Ratopia.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 2244130
+Slime Rancher 2:
+  files:
+    "<home>/AppData/LocalLow/MonomiPark/SlimeRancher2":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+  installDir:
+    Slime Rancher 2: {}
+  launch:
+    "<base>/SlimeRancher2.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 1657630
+SnowRunner:
+  files:
+    "<root>/userdata/<storeUserId>/1465360/remote":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+    "<winDocuments>/My Games/SnowRunner/base/storage":
+      tags:
+        - config
+      when:
+        - os: windows
+    "<winPublic>/Documents/Steam/RUNE/1465360/remote":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    SnowRunner: {}
+  launch:
+    "<base>/Sources/Bin/SnowRunner.exe":
+      - when:
+          - bit: 64
+            os: windows
+        workingDir: "<base>/Sources/Bin"
+  steam:
+    id: 1465360
+The Last of Us Part I:
+  files:
+    "<home>/Saved Games/The Last of Us Part I/users/<storeUserId>/savedata":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<home>/Saved Games/The Last of Us Part I/users/<storeUserId>/screeninfo.cfg":
+      tags:
+        - config
+      when:
+        - os: windows
+  installDir:
+    The Last of Us Part I: {}
+  launch:
+    "<base>/launcher.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 1888930
