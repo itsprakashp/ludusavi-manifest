@@ -1,4 +1,43 @@
 ---
+AI Limit:
+  files:
+    "<home>/AppData/LocalLow/SenseGames/AILIMIT/Archive":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    AI Limit: {}
+  launch:
+    "<base>/AI-LIMIT.exe":
+      - when:
+          - os: windows
+  registry:
+    HKEY_CURRENT_USER/SOFTWARE/SenseGames/AILIMIT:
+      tags:
+        - config
+  steam:
+    id: 2407270
+Attack on Titan:
+  files:
+    "<winDocuments>/KoeiTecmo/Attack on Titan/SAVEDATA":
+      tags:
+        - save
+      when:
+        - os: windows
+  installDir:
+    Attack on Titan: {}
+  launch:
+    "<base>/AoT.exe":
+      - when:
+          - bit: 64
+            os: windows
+  registry:
+    HKEY_CURRENT_USER/Software/KoeiTecmo/Attack on Titan/System:
+      tags:
+        - config
+  steam:
+    id: 449800
 Bayonetta:
   files:
     "<winDocuments>/Bayonetta":
@@ -96,6 +135,26 @@ Factorio:
             os: windows
   steam:
     id: 427520
+"Fantasy Life i: The Girl Who Steals Time":
+  files:
+    "<home>/AppData/LocalLow/LEVEL5 Inc_/Users/<storeUserId>/Saved":
+      tags:
+        - save
+      when:
+        - os: windows
+    "<winLocalAppData>/Game/Saved":
+      tags:
+        - config
+      when:
+        - os: windows
+  installDir:
+    FANTASY LIFE i: {}
+  launch:
+    "<base>/NFL1.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 2993780
 Farming Simulator 25:
   files:
     "<winDocuments>/My Games/FarmingSimulator2025/savegame*":
@@ -236,6 +295,22 @@ Mini Motorways:
           - os: windows
   steam:
     id: 524220
+"Nymphomaniac - Sex Addict":
+  files:
+    "<winLocalAppData>/Nymphomaniac/Saved":
+      tags:
+        - config
+        - save
+      when:
+        - os: windows
+  installDir:
+    Nymphomaniac - Sex Addict: {}
+  launch:
+    "<base>/Windows/Nymphomaniac.exe":
+      - when:
+          - os: windows
+  steam:
+    id: 638230
 Ratopia:
   files:
     "<base>/Ratopia_Data/SaveFile":
